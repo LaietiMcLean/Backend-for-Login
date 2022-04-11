@@ -9,7 +9,7 @@ const newUser = (req, resp) => {
 }
 
 
-const renew = (req, resp) => {
+const renewToken = (req, resp) => {
     return resp.json({
         name: "Maria",
         ok: true, 
@@ -28,6 +28,6 @@ const login = (req, resp) => {
 
 module.exports = {
     newUser,
-    login,
-    renew
+    renewToken,
+    login
 }

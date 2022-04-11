@@ -1,11 +1,11 @@
 const { Router } = require('express');
-const { newUser, login, renew } = require('../controllers/auth.controllers');
+const { newUser, login, renewToken } = require('../controllers/auth.controllers');
 
 const router = Router();
 
 router.post('/new', newUser)
 
-router.post('/', renew)
+router.post('/', renewToken)
 
 router.get('/renew', login)
 
